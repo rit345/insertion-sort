@@ -1,12 +1,14 @@
 #include<stdio.h>
 int main(){
-    int a[10];
+    int n;
+    scanf("%d",&n);
+    int a[n];
     printf("Enter array: \n");
-    for(int i=0;i<10;i++)
+    for(int i=0;i<n;i++)
         scanf("%d",&a[i]);
 
-    for(int i=0;i<10;i++){
-        for(int j=i+1;j<10;j++){
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
             if(a[j]<a[i]){
                 int temp;
                 temp = a[i];
@@ -16,6 +18,6 @@ int main(){
         }
 
     }
-        for(int i=0;i<10;i++)
+        for(int i=0;i<n;i++)
         printf("%d ",a[i]);
 }
